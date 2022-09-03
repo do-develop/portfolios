@@ -1,0 +1,91 @@
+body {
+    height: 100%;
+    margin: 0;
+    background-color: #473737;
+    background: linear-gradient(#525cdf, #ffffff);
+    font-size: 18px;
+    font-family: 'Noto Sans KR', sans-serif;
+    letter-spacing: .5px;
+    font-weight: 400;
+    color:black;
+}
+
+#wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    max-width:  600px;
+    height: 400px;
+    padding: 2em;
+}
+
+form p {
+    margin-bottom: 18px;
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+form fieldset {
+    margin-bottom: 20px;
+    padding: 0;
+    border: none;
+}
+
+.survey__continue-button {
+    font-size: 1.3em;
+    background-color: white;
+    color:black;
+    padding: .5em 1em;
+    text-decoration: none;
+    float: right;
+}
+
+.survey__continue-button:hover,
+.survey__continue-button:focus {
+    background-color: #525cdf;
+    color: white;
+}
+
+.survey__reset-button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 18px;
+    letter-spacing: .5px;
+}
+
+.survey__reset-button:hover {
+    color: #473737;
+}
+
+form label span {
+    display: block;
+    box-sizing: border-box;
+    margin-bottom: 8px;
+    padding: 14px 12px;
+    border: 2px solid #525cdf;
+    cursor: pointer;
+    border-radius: 25px;
+}
+
+form label:hover span, form label:focus span {
+    border: 2px solid white;
+    background-color: #ffffff;
+    color:black;
+}
+
+form input[type=radio]{
+    visibility: hidden;
+}
+
+form input [type=radio]:checked + span {
+    border: 2px solid white;
+    background-color: #ffffff;
+    color:black;
+}
